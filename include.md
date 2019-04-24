@@ -31,7 +31,7 @@ The phenology of a given grasshopper species or population may be more or less s
 | Melanoplus boulderensis |**************| ********** |*************|
 | Melanoplus dawsoni         |**************| ********** |*************|
 | Melanoplus sanguinipes   |**************| ********** |*************|
-
+```
 
 ### This App
 
