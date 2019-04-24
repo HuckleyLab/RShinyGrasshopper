@@ -7,13 +7,17 @@
 
 library(shiny)
 library(cowplot)
+library(httr)
+library(RCurl)
 
-#
 rgb.palette <- colorRampPalette(c("red", "orange", "blue"), space = "rgb")
 
-# Do house  keeping
+#load data
 absM.all=read.csv(paste(getwd(),"/gh-all.csv",sep = ""))
 absM.all.ssy=read.csv(paste(getwd(),"/gh-all.ssy.csv",sep = ""))
+# Read data from Github
+#absM.all=read.csv(text=GET("https://github.com/HuckleyLab/RShinyGrasshopper/gh-all.csv"))
+#absM.all.ssy=read.csv(text=GET("https://github.com/HuckleyLab/RShinyGrasshopper/gh-all.ssy.csv"), sep = "")
 
 # Define server logic to do filtering
 shinyServer(function(input, output) {
