@@ -24,8 +24,12 @@ Grasshopper developmental stages, image: Wikimedia</figcaption>
 	
 Every week in the summers of 1958-1960, entomologists Gordon Alexander and John Hilliard led a field crew that collected grasshoppers along an **elevational transect**—a series of survey sites located at different elevations—in the Rocky Mountains of Colorado. Because each grasshopper instar is recognizably different, as you can see in the figure above, the pair were able to accurately identify the developmental age of each individual they collected. 
 
+<p>
+<div style="display: flex; justify-content: center;">
 ![Field site in Boulder, CO, 1960, photo: Don Van Horn](http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/3005-2-mis-Bureau-stdsCLEAN.jpg) ![John Hilliard & Gordon Alexander's wife at Guanella Pass, 1959, photo: Don Van Horn](http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/2676-J-Hilliard-Mrs-A.jpg)
 ![John Hilliard & Gordon Alexander, 1958, photo: Don Van Horn](http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/2056-Hilliard-and-Alexander-1958.jpg)
+</div>
+</p>
 
 Nearly fifty years later, César Nufio realized that by conducting a resurvey of the same sites using the same protocols, he could assess how these grasshoppers had responded both to year-to-year variation in temperature at these locations, and to the larger trend of climate warming. A team led by Nufio did this work during 2006-2016. 
 
