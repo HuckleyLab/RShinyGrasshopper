@@ -16,9 +16,6 @@ Temperature is an especially influential factor in the lives of **ectotherms**, 
 <div style="display: flex; justify-content: center;">
 <<<<<<< HEAD
 <img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Grasshoppermetasnodgrass.jpg"/, height="600 px">
-=======
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Grasshoppermetasnodgrass.jpg"/>
->>>>>>> 96a857755567786f201f9be7cbd7638992d97140
 <figcaption>
 Grasshopper developmental stages, image: Wikimedia</figcaption>
 </div>
