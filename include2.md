@@ -15,12 +15,14 @@ Try to answer some of the following questions by changing the data you plot:
 
 1. Plot the data for all species at site 2591m. In cool vs. warm years, do the dates at which grasshoppers reach adulthood change? 
     1. What about the amount of accumulated heat they experience before reaching adulthood?
-    2. Consider whether this is different for early vs. late-season grasshoppers (see the table above). 
-
+    2. Is this different for early vs. late-season grasshoppers (see the table above)?
+    
 2. How does the date at which M. dawsoni reaches adulthood change with seasonal warmth? 
     1. Is this different at low vs. high elevations, and why might this be?
 
-3. How does the amount of accumulated heat experienced by C. abdominalis when it reaches adulthood change with seasonal warmth?  
+3. How does the amount of accumulated heat M. dawsoni experiences before reaching adulthood change with seasonal warmth? 
+    1. Is this different for early vs. late-season grasshoppers?
 
-4. Is this different at low vs. high elevations, and why might this be?
+4. How does the amount of accumulated heat experienced by C. abdominalis when it reaches adulthood change with seasonal warmth?
+    1. Is this different at low vs. high elevations, and why might this be?
 
