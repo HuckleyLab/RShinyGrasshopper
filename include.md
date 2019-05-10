@@ -150,7 +150,7 @@ Try to answer some of the following questions by changing the data you plot:
 
 2. How does phenology differ between historic and resurvey years for A. clavatus? (Hint: The closer a line is to the left of the panel, the earlier in the season development begins, and vice versa.) Why might this be?
 
-3.How does phenology differ for high vs. low-elevation populations of M. sanguinipes? (Hint: The steeper the line, the faster development occurs.) Why might this be?
+3. How does phenology differ for high vs. low-elevation populations of M. sanguinipes? (Hint: The steeper the line, the faster development occurs.) Why might this be?
 
 4. How does phenology for M. boulderensis differ in 2010 vs. 2007? What about M. dawsoni? Why might this be?
 
