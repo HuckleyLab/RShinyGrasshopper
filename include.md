@@ -13,10 +13,8 @@ For many organisms, temperature has a major influence on **phenology**—the tim
 Temperature is an especially influential factor in the lives of **ectotherms**, animals whose body temperatures aren’t controlled internally but are strongly dependent on their surrounding environments. (For example, insects tend to be sluggish in cool conditions and active when it’s warmer, because temperatures drive their  **metabolic rates**: the chemical reactions that take place in cells to sustain life, including the conversion of food to energy.) Insects that inhabit seasonal environments like mountains, where climatic conditions range from frigid and snowy to hot and sunny over the course of the year, face a unique challenge. Montane grasshoppers, for instance, spend months in a state of dormancy called **diapause**, and can only feed and grow during the summer. They begin the growing season as eggs that were laid the previous year and spent the winter buried beneath the snow, and they must pass through five juvenile **instars** (stages) to reach adulthood. If they don’t do this before autumn’s chill, they won’t be able to reproduce. In this context, summer temperatures act as a powerful signal driving **developmental phenology**: when these insects hatch and how fast they mature. 
 
 <p>
-<style= "display: block; margin-left: auto; margin-right: auto;">
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Grasshoppermetasnodgrass.jpg"/, height="600 px">
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Grasshoppermetasnodgrass.jpg"/, height="600 px", style= "display: block; margin-left: auto; margin-right: auto;">
 <figcaption>Grasshopper developmental stages, image: Wikimedia</figcaption>
-</style>
 </p>
 
 ### Colorado Grasshoppers: Then and Now
