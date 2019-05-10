@@ -76,10 +76,6 @@ fluidPage(
    
    column(12,plotOutput(outputId="secondPlot")
    )),
- fluidRow(
-   column(12,
-          includeMarkdown("include3.md")
-   )),
  hr()
 
 
