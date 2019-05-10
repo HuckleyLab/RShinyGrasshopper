@@ -13,7 +13,9 @@ For many organisms, temperature has a major influence on **phenology**—the tim
 Temperature is an especially influential factor in the lives of **ectotherms**, animals whose body temperatures aren’t controlled internally but are strongly dependent on their surrounding environments. (For example, insects tend to be sluggish in cool conditions and active when it’s warmer, because temperatures drive their  **metabolic rates**: the chemical reactions that take place in cells to sustain life, including the conversion of food to energy.) Insects that inhabit seasonal environments like mountains, where climatic conditions range from frigid and snowy to hot and sunny over the course of the year, face a unique challenge. Montane grasshoppers, for instance, spend months in a state of dormancy called **diapause**, and can only feed and grow during the summer. They begin the growing season as eggs that were laid the previous year and spent the winter buried beneath the snow, and they must pass through five juvenile **instars** (stages) to reach adulthood. If they don’t do this before autumn’s chill, they won’t be able to reproduce. In this context, summer temperatures act as a powerful signal driving **developmental phenology**: when these insects hatch and how fast they mature. 
 
 <p align="center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Grasshoppermetasnodgrass.jpg"/, height="600 px", style= "display: block; margin-left: auto; margin-right: auto;">
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Grasshoppermetasnodgrass.jpg"/, height="600 px">
+</p>
+<p align="center">
 <figcaption>Grasshopper developmental stages, image: Wikimedia</figcaption>
 </p>
 
@@ -21,16 +23,35 @@ Temperature is an especially influential factor in the lives of **ectotherms**, 
 	
 Every week in the summers of 1958-1960, entomologists Gordon Alexander and John Hilliard led a field crew that collected grasshoppers along an **elevational transect**—a series of survey sites located at different elevations—in the Rocky Mountains of Colorado. Because each grasshopper instar is recognizably different, as you can see in the figure above, the pair were able to accurately identify the developmental age of each individual they collected. 
 
-<p>
-<div style="display: flex; justify-content: center;">
-![Field site in Boulder, CO, 1960, photo: Don Van Horn](http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/3005-2-mis-Bureau-stdsCLEAN.jpg) ![John Hilliard & Gordon Alexander's wife at Guanella Pass, 1959, photo: Don Van Horn](http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/2676-J-Hilliard-Mrs-A.jpg)
-![John Hilliard & Gordon Alexander, 1958, photo: Don Van Horn](http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/2056-Hilliard-and-Alexander-1958.jpg)
-</div>
+<p align="center">
+<img src="http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/3005-2-mis-Bureau-stdsCLEAN.jpg"/>
+</p>
+<p align="center">
+<figcaption>Field site in Boulder, CO, 1960, photo: Don Van Horn</figcaption>
+</p>
+
+<p align="center">
+<img src="http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/2676-J-Hilliard-Mrs-A.jpg"/>
+</p>
+<p align="center">
+<figcaption>John Hilliard & Gordon Alexander's wife at Guanella Pass, 1959, photo: Don Van Horn</figcaption>
+</p>
+
+<p align="center">
+<img src="http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/2056-Hilliard-and-Alexander-1958.jpg"/>
+</p>
+<p align="center">
+<figcaption>John Hilliard & Gordon Alexander, 1958, photo: Don Van Horn</figcaption>
 </p>
 
 Nearly fifty years later, César Nufio realized that by conducting a resurvey of the same sites using the same protocols, he could assess how these grasshoppers had responded both to year-to-year variation in temperature at these locations, and to the larger trend of climate warming. A team led by Nufio did this work during 2006-2016. 
 
-![César gets ready to sweep for grasshoppers, image: César Nufio](http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/Cesar.jpg)
+<p align="center">
+<img src="http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/Cesar.jpg"/>
+</p>
+<p align="center">
+<figcaption>César gets ready to sweep for grasshoppers, image: César Nufio</figcaption>
+</p>
 
 The phenology of a given grasshopper species or population may be more or less sensitive to summer temperatures depending on whether it tends to emerge from diapause early or late in the season, how far it is able to disperse, and where on the mountain it lives. This is because seasonality affects the amount of time available for development, and species that have a lower ability to disperse (e.g. wingless species) may be more **locally adapted**, or more genetically well-suited to the specific environmental conditions where it is found. Finally, at higher elevations, summers are both shorter and cooler than at lower elevations, placing even greater constraints on insect development. The table below shows the traits of six grasshopper species that were surveyed by both the historic and the contemporary researchers.
 
@@ -45,7 +66,19 @@ The phenology of a given grasshopper species or population may be more or less s
 | Melanoplus sanguinipes   |**************| ********** |*************|
 ```
 
-![_Melanoplus sanguinipes_, image: Don Van Horn](http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/1995-Melanoplus-mexicanus-sanguinipes.jpg)![_Chloealtis addominalis_, image: Don Van Horn](http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/2054-Chloealtis-addominalis.jpg)
+<p align="center">
+<img src="http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/1995-Melanoplus-mexicanus-sanguinipes.jpg"/>
+</p>
+<p align="center">
+<figcaption>Melanoplus sanguinipes, image: Don Van Horn</figcaption>
+</p>
+
+<p align="center">
+<img src="http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/2054-Chloealtis-addominalis.jpg"/>
+</p>
+<p align="center">
+<figcaption>Chloealtis addominalis, image: Don Van Horn/figcaption>
+</p>
 
 ### This App
 
