@@ -13,6 +13,7 @@
 
 library(shiny)
 library(tidyverse)
+library(shinyalert)
 
 #specify choices
 specs= c("Aeropedellus clavatus", "Camnula pellucida", "Melanoplus dawsoni", "Melanoplus sanguinipes", "Melanoplus boulderensis")
@@ -84,4 +85,9 @@ fluidPage(
 
 
 )
+)
+
+ui <- fluidPage(
+  useShinyalert(),  # Set up shinyalert
+  actionButton("preview", "Preview")
 )
