@@ -146,8 +146,11 @@ In this first exercise, you can generate figures that all have the same general 
 
 Try to answer some of the following questions by changing the data you plot:
 
-In general, how does phenology differ between cool and warm years? What about between low and high elevations?
-How does phenology differ between historic and resurvey years for A. clavatus? (Hint: The closer a line is to the left of the panel, the earlier in the season development begins, and vice versa.) Why might this be?
-How does phenology differ for high vs. low-elevation populations of M. sanguinipes? (Hint: The steeper the line, the faster development occurs.) Why might this be?
-How does phenology for M. boulderensis differ in 2010 vs. 2007? What about M. dawsoni? Why might this be?
+1. In general, how does phenology differ between cool and warm years? What about between low and high elevations?
+
+2. How does phenology differ between historic and resurvey years for A. clavatus? (Hint: The closer a line is to the left of the panel, the earlier in the season development begins, and vice versa.) Why might this be?
+
+2.How does phenology differ for high vs. low-elevation populations of M. sanguinipes? (Hint: The steeper the line, the faster development occurs.) Why might this be?
+
+3. How does phenology for M. boulderensis differ in 2010 vs. 2007? What about M. dawsoni? Why might this be?
 
