@@ -20,7 +20,9 @@ Try to answer some of the following questions by changing the data you plot:
 2. How does the date at which M. dawsoni reaches adulthood change with seasonal warmth? 
     1. Is this different at low vs. high elevations, and why might this be?
 
-3. How does the amount of accumulated heat experienced by C. abdominalis when it reaches adulthood change with seasonal warmth?  
+3. How does the amount of accumulated heat M. dawsoni experiences before reaching adulthood change with seasonal warmth? 
+    1. Is this different for early vs. late-season grasshoppers (see the table above)?
 
-4. Is this different at low vs. high elevations, and why might this be?
+4. How does the amount of accumulated heat experienced by C. abdominalis when it reaches adulthood change with seasonal warmth?
+    1. Is this different at low vs. high elevations, and why might this be?
 
