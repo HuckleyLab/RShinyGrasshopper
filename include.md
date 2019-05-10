@@ -15,8 +15,7 @@ Temperature is an especially influential factor in the lives of **ectotherms**, 
 <p>
 <div style= "display: block; margin-left: auto; margin-right: auto;">
 <img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Grasshoppermetasnodgrass.jpg"/, height="600 px">
-<figcaption>
-Grasshopper developmental stages, image: Wikimedia</figcaption>
+<figcaption>Grasshopper developmental stages, image: Wikimedia</figcaption>
 </div>
 </p>
 
