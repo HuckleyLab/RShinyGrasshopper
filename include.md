@@ -98,12 +98,6 @@ The phenology of a given grasshopper species or population may be more or less s
 				<td>29.99</td>
 			</tr>
 		</tbody>
-		<tfoot>
-			<tr>
-				<td colspan="2"></td>
-				<td>100.00</td>
-			</tr>
-		</tfoot>
 	</table>
 </div>
 
