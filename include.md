@@ -131,7 +131,13 @@ Before you begin, it’s important to be comfortable with two key terms you’ll
 
 The second term is **development index**. This has values that range from 1 to 6, and is a way of translating the developmental age of many individual grasshoppers into an average age for a whole population. For instance, a development index of 1 for _Aeropedellus clavatus_ (the clubhorned grasshopper) at 1752 m on day 150 in 2006 would mean that at that time point, the entire population at that elevation consisted of individuals in their first instar. A development index of 5.5 for the same population (presumably measured later in the year) would mean that most individual clubhorned grasshoppers found at that elevation were at or very near to adulthood.  
 
-![_Aeropedellus clavatus_, image: Don Van Horn](http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/2017-Aeropedellus-clavatus-F.jpg)
+
+<p align="center">
+<img src="http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/2017-Aeropedellus-clavatus-F.jpg"/>
+</p>
+<p align="center">
+<figcaption>Aeropedellus clavatus, image: Don Van Horn</figcaption>
+</p>
 
 
 ### Exploring development index data
