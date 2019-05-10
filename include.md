@@ -120,7 +120,7 @@ The phenology of a given grasshopper species or population may be more or less s
 <img src="http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/2054-Chloealtis-addominalis.jpg"/>
 </p>
 <p align="center">
-<figcaption>Chloealtis addominalis, image: Don Van Horn/figcaption>
+<figcaption>Chloealtis addominalis, image: Don Van Horn</figcaption>
 </p>
 
 ### This App
