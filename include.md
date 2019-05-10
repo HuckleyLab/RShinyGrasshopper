@@ -55,7 +55,7 @@ Nearly fifty years later, César Nufio realized that by conducting a resurvey of
 
 The phenology of a given grasshopper species or population may be more or less sensitive to summer temperatures depending on whether it tends to emerge from diapause early or late in the season, how far it is able to disperse, and where on the mountain it lives. This is because seasonality affects the amount of time available for development, and species that have a lower ability to disperse (e.g. wingless species) may be more **locally adapted**, or more genetically well-suited to the specific environmental conditions where it is found. Finally, at higher elevations, summers are both shorter and cooler than at lower elevations, placing even greater constraints on insect development. The table below shows the traits of six grasshopper species that were surveyed by both the historic and the contemporary researchers.
 
-<h4>Alternate</h4>
+<h4>Grasshopper Traits</h4>
 <div class="table-wrapper">
 	<table class="alt">
 		<thead>
@@ -69,33 +69,39 @@ The phenology of a given grasshopper species or population may be more or less s
 		<tbody>
 			<tr>
 				<td>Aeropedellus clavatus </td>
-				<td>Ante turpis integer aliquet porttitor.</td>
-				<td>29.99</td>
+				<td>TK</td>
+				<td>TK</td>
+				<td>TK</td>
 			</tr>
 			<tr>
 				<td>Camnula pellucida </td>
-				<td>Vis ac commodo adipiscing arcu aliquet.</td>
-				<td>19.99</td>
+				<td>TK</td>
+				<td>TK</td>
+				<td>TK</td>
 			</tr>
 			<tr>
 				<td>Chloealtis abdominalis</td>
-				<td> Morbi faucibus arcu accumsan lorem.</td>
-				<td>29.99</td>
+				<td>TK</td>
+				<td>TK</td>
+				<td>TK</td>
 			</tr>
 			<tr>
 				<td>Melanoplus boulderensis</td>
-				<td>Vitae integer tempus condimentum.</td>
-				<td>19.99</td>
+				<td>TK</td>
+				<td>TK</td>
+				<td>TK</td>
 			</tr>
 			<tr>
 				<td>Melanoplus dawsoni </td>
-				<td>Ante turpis integer aliquet porttitor.</td>
-				<td>29.99</td>
+				<td>TK</td>
+				<td>TK</td>
+				<td>TK</td>
 			</tr>
 				<tr>
 				<td>Melanoplus sanguinipes </td>
-				<td>Ante turpis integer aliquet porttitor.</td>
-				<td>29.99</td>
+				<td>TK</td>
+				<td>TK</td>
+				<td>TK</td>
 			</tr>
 		</tbody>
 	</table>
