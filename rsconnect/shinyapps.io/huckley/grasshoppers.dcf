@@ -1,0 +1,12 @@
+name: grasshoppers
+title: grasshoppers
+username:
+account: huckley
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 613522
+bundleId: 2087608
+url: https://huckley.shinyapps.io/grasshoppers/
+when: 1557958315.13823
+asMultiple: FALSE
+asStatic: FALSE

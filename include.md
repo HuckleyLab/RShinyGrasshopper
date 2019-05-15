@@ -34,7 +34,7 @@ Every week in the summers of 1958-1960, entomologists Gordon Alexander and John 
 <img src="http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/2676-J-Hilliard-Mrs-A.jpg"/>
 </p>
 <p align="center">
-<figcaption>John Hilliard & Gordon Alexander's wife at Guanella Pass, 1959, photo: Don Van Horn</figcaption>
+<figcaption>John Hilliard & Marion Isely (Gordon Alexander's wife, also a trained biologist) at Guanella Pass, 1959, photo: Don Van Horn</figcaption>
 </p>
 
 <p align="center">
