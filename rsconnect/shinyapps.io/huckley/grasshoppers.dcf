@@ -5,8 +5,8 @@ account: huckley
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 613522
-bundleId: 2087608
+bundleId: 2092610
 url: https://huckley.shinyapps.io/grasshoppers/
-when: 1557958315.13823
+when: 1558123752.69565
 asMultiple: FALSE
 asStatic: FALSE
