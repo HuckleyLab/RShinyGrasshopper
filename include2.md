@@ -25,4 +25,5 @@ Try to answer some of the following questions by changing the data you plot:
  
 4. How does the amount of accumulated heat experienced by C. abdominalis when it reaches adulthood change with seasonal warmth?  
     4.1 Is this different at low vs. high elevations, and why might this be?  
-
+    
+    
