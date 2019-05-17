@@ -146,7 +146,6 @@ In this first exercise, you can generate figures that all have the same general 
 
 Try to answer some of the following questions by changing the data you plot:
 
-
 * In general, how does phenology differ between cool and warm years? 
     + What about between low and high elevations?
     
@@ -159,4 +158,3 @@ Try to answer some of the following questions by changing the data you plot:
 * How does phenology for M. boulderensis differ in 2010 vs. 2007? 
     + What about M. dawsoni? 
     + Why might this be?
-
