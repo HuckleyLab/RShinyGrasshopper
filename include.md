@@ -4,11 +4,12 @@ author: “Meera Lee Sethi"
 date: "4/8/2019"
 output: html**document
 ---
-## Phenological Responses to Climate Change: A Case Study
+
+## Phenological Responses to Climate Change: A Grasshopper Case Study
 
 ### Temperature and Phenology
 
-For many organisms, temperature has a major influence on **phenology**—the timing of important life events such as when birds migrate or when plants flower—and scientists across the world have been documenting **phenological shifts** in response to climate change, like deciduous trees producing new leaves [earlier in the year](https://www.usanpn.org/files/LeafOutHighlightChange**Arnoldia**.pdf) because spring-like temperatures are arriving sooner. This kind of research often relies heavily on historic records of phenology, which allow us to track changes in the average timing of events of interest across many decades, and compare them to climate data collected over the corresponding period of time.
+For many organisms, temperature has a major influence on **phenology**—the timing of important life events such as when birds migrate or when plants flower—and scientists across the world have been documenting **phenological shifts** in response to climate change, like deciduous trees producing new leaves [earlier in the year](https://www.usanpn.org/files/LeafOutHighlightChange_Arnoldia_.pdf) because spring-like temperatures are arriving sooner. This kind of research often relies heavily on historic records of phenology, which allow us to track changes in the average timing of events of interest across many decades, and compare them to climate data collected over the corresponding period of time.
 
 Temperature is an especially influential factor in the lives of **ectotherms**, animals whose body temperatures aren’t controlled internally but are strongly dependent on their surrounding environments. (For example, insects tend to be sluggish in cool conditions and active when it’s warmer, because temperatures drive their  **metabolic rates**: the chemical reactions that take place in cells to sustain life, including the conversion of food to energy.) Insects that inhabit seasonal environments like mountains, where climatic conditions range from frigid and snowy to hot and sunny over the course of the year, face a unique challenge. Montane grasshoppers, for instance, spend months in a state of dormancy called **diapause**, and can only feed and grow during the summer. They begin the growing season as eggs that were laid the previous year and spent the winter buried beneath the snow, and they must pass through five juvenile **instars** (stages) to reach adulthood. If they don’t do this before autumn’s chill, they won’t be able to reproduce. In this context, summer temperatures act as a powerful signal driving **developmental phenology**: when these insects hatch and how fast they mature. 
 
