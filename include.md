@@ -56,59 +56,15 @@ Nearly fifty years later, César Nufio realized that by conducting a resurvey of
 
 The phenology of a given grasshopper species or population may be more or less sensitive to summer temperatures depending on whether it tends to emerge from diapause early or late in the season, how far it is able to disperse, and where on the mountain it lives. This is because seasonality affects the amount of time available for development, and species that have a lower ability to disperse (e.g. wingless species) may be more **locally adapted**, or more genetically well-suited to the specific environmental conditions where it is found. Finally, at higher elevations, summers are both shorter and cooler than at lower elevations, placing even greater constraints on insect development. The table below shows the traits of six grasshopper species that were surveyed by both the historic and the contemporary researchers.
 
-<h4>Grasshopper Traits</h4>
-<div class="table-wrapper">
-	<table class="alt">
-		<thead>
-			<tr>
-				<th>Grasshopper Species</th>
-				<th>Seasonality</th>
-				<th>Dispersal</th>
-				<th>Distribution</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Aeropedellus clavatus </td>
-				<td>Early</td>
-				<td>Limited</td>
-				<td>1752-2591m</td>
-			</tr>
-			<tr>
-				<td>Camnula pellucida </td>
-				<td>Late</td>
-				<td>More dispersive</td>
-				<td>2195-3048m</td>
-			</tr>
-			<tr>
-				<td>Chloealtis abdominalis</td>
-				<td>Late</td>
-				<td>Limited</td>
-				<td>2195-3048m</td>
-			</tr>
-			<tr>
-				<td>Melanoplus boulderensis</td>
-				<td>Early</td>
-				<td>Limited</td>
-				<td>2195-3048m</td>
-			</tr>
-			<tr>
-				<td>Melanoplus dawsoni </td>
-				<td>Late</td>
-				<td>Limited</td>
-				<td>1752-2591m</td>
-			</tr>
-				<tr>
-				<td>Melanoplus sanguinipes </td>
-				<td>Late</td>
-				<td>More dispersive</td>
-				<td>1752-3048m</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-
+| Grasshopper traits      |             |                 |                 |
+|-------------------------|-------------|-----------------|-----------------|
+| Species                 | Seasonality | Dispersal       | Elevation Range |
+| Aeropedellus clavatus   | Early       | Limited         | 1752-2591m      |
+| Camnula pellucida       | Late        | More dispersive | 2195-3048m      |
+| Chloealtis abdominalis  | Late        | Limited         | 2195-3048m      |
+| Melanoplus boulderensis | Early       | Limited         | 2195-3048m      |
+| Melanoplus dawsoni      | Late        | Limited         | 1752-2591m      |
+| Melanoplus sanguinipes  | Late        | More dispersive | 1752-3048m      |
 
 <p align="center">
 <img src="http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/1995-Melanoplus-mexicanus-sanguinipes.jpg"/>
