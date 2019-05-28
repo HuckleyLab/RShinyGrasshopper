@@ -56,58 +56,64 @@ Nearly fifty years later, César Nufio realized that by conducting a resurvey of
 
 The phenology of a given grasshopper species or population may be more or less sensitive to summer temperatures depending on whether it tends to emerge from diapause early or late in the season, how far it is able to disperse, and where on the mountain it lives. This is because seasonality affects the amount of time available for development, and species that have a lower ability to disperse (e.g. wingless species) may be more **locally adapted**, or more genetically well-suited to the specific environmental conditions where it is found. Finally, at higher elevations, summers are both shorter and cooler than at lower elevations, placing even greater constraints on insect development. The table below shows the traits of six grasshopper species that were surveyed by both the historic and the contemporary researchers.
 
-<h4>Grasshopper Traits</h4>
-<div class="table-wrapper">
-	<table class="alt">
-		<thead>
-			<tr>
-				<th>Grasshopper Species</th>
-				<th>Seasonality</th>
-				<th>Dispersal</th>
-				<th>Distribution</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Aeropedellus clavatus </td>
-				<td>Early</td>
-				<td>Limited</td>
-				<td>1752-2591m</td>
-			</tr>
-			<tr>
-				<td>Camnula pellucida </td>
-				<td>Late</td>
-				<td>More dispersive</td>
-				<td>2195-3048m</td>
-			</tr>
-			<tr>
-				<td>Chloealtis abdominalis</td>
-				<td>Late</td>
-				<td>Limited</td>
-				<td>2195-3048m</td>
-			</tr>
-			<tr>
-				<td>Melanoplus boulderensis</td>
-				<td>Early</td>
-				<td>Limited</td>
-				<td>2195-3048m</td>
-			</tr>
-			<tr>
-				<td>Melanoplus dawsoni </td>
-				<td>Late</td>
-				<td>Limited</td>
-				<td>1752-2591m</td>
-			</tr>
-				<tr>
-				<td>Melanoplus sanguinipes </td>
-				<td>Late</td>
-				<td>More dispersive</td>
-				<td>1752-3048m</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-5ua9{font-weight:bold;text-align:left}
+.tg .tg-s268{text-align:left}
+.tg .tg-pvqp{font-style:italic;text-align:left}
+.tg .tg-8zwo{font-style:italic;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-1wig" colspan="4">Grasshopper traits</th>
+  </tr>
+  <tr>
+    <td class="tg-5ua9">Species</td>
+    <td class="tg-5ua9">Seasonality</td>
+    <td class="tg-5ua9">Dispersal</td>
+    <td class="tg-5ua9">Elevation Range</td>
+  </tr>
+  <tr>
+    <td class="tg-s268"><span style="font-style:italic">Aeropedellus clavatus</span></td>
+    <td class="tg-s268">Early</td>
+    <td class="tg-s268">Limited</td>
+    <td class="tg-s268">1752-2591m</td>
+  </tr>
+  <tr>
+    <td class="tg-pvqp">Camnula pellucida</td>
+    <td class="tg-s268">Late</td>
+    <td class="tg-s268">More dispersive</td>
+    <td class="tg-s268">2195-3048m</td>
+  </tr>
+  <tr>
+    <td class="tg-pvqp">Chloealtis abdominalis</td>
+    <td class="tg-s268">Late</td>
+    <td class="tg-s268">Limited</td>
+    <td class="tg-s268">2195-3048m</td>
+  </tr>
+  <tr>
+    <td class="tg-pvqp">Melanoplus boulderensis</td>
+    <td class="tg-s268">Early</td>
+    <td class="tg-s268">Limited</td>
+    <td class="tg-s268">2195-3048m</td>
+  </tr>
+  <tr>
+    <td class="tg-8zwo">Melanoplus dawsoni</td>
+    <td class="tg-0lax">Late</td>
+    <td class="tg-0lax">Limited</td>
+    <td class="tg-0lax">1752-2591m</td>
+  </tr>
+  <tr>
+    <td class="tg-8zwo">Melanoplus sanguinipes</td>
+    <td class="tg-0lax">Late</td>
+    <td class="tg-0lax">More dispersive</td>
+    <td class="tg-0lax">1752-3048m</td>
+  </tr>
+</table>
 
 
 <p align="center">
