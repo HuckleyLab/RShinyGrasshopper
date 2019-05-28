@@ -70,39 +70,39 @@ The phenology of a given grasshopper species or population may be more or less s
 		<tbody>
 			<tr>
 				<td>Aeropedellus clavatus </td>
-				<td>TK</td>
-				<td>TK</td>
-				<td>TK</td>
+				<td>Early</td>
+				<td>Limited</td>
+				<td>1752-2591m</td>
 			</tr>
 			<tr>
 				<td>Camnula pellucida </td>
-				<td>TK</td>
-				<td>TK</td>
-				<td>TK</td>
+				<td>Late</td>
+				<td>More dispersive</td>
+				<td>2195-3048m</td>
 			</tr>
 			<tr>
 				<td>Chloealtis abdominalis</td>
-				<td>TK</td>
-				<td>TK</td>
-				<td>TK</td>
+				<td>Late</td>
+				<td>Limited</td>
+				<td>2195-3048m</td>
 			</tr>
 			<tr>
 				<td>Melanoplus boulderensis</td>
-				<td>TK</td>
-				<td>TK</td>
-				<td>TK</td>
+				<td>Early</td>
+				<td>Limited</td>
+				<td>2195-3048m</td>
 			</tr>
 			<tr>
 				<td>Melanoplus dawsoni </td>
-				<td>TK</td>
-				<td>TK</td>
-				<td>TK</td>
+				<td>Late</td>
+				<td>Limited</td>
+				<td>1752-2591m</td>
 			</tr>
 				<tr>
 				<td>Melanoplus sanguinipes </td>
-				<td>TK</td>
-				<td>TK</td>
-				<td>TK</td>
+				<td>Late</td>
+				<td>More dispersive</td>
+				<td>1752-3048m</td>
 			</tr>
 		</tbody>
 	</table>
