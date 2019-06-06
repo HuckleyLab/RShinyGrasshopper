@@ -84,7 +84,9 @@ shinyServer(function(input, output) {
       scale_colour_gradientn(colours =rgb.palette(10))+
       ylab("Development Index")+
       xlab(xlab.title)+labs(color="Mean season gdds")+
-      theme(legend.position = "bottom") + guides(alpha=FALSE)
+      theme(legend.position = "bottom") + guides(alpha=FALSE) +
+      theme(strip.text = element_text(size = 10)) + 
+      theme(axis.text=element_text(size=12), axis.title=element_text(size=12), legend.text=element_text(size=12), legend.title=element_text(size=12))
     
   })
   
@@ -97,7 +99,9 @@ shinyServer(function(input, output) {
       facet_wrap(~elev.lab, ncol=1, scales="free") +
       theme_bw()+ylab("day of year")+xlab("season growing degree days (C)")+
       scale_shape_manual(values = c(21, 22, 23))+
-      scale_alpha_manual(values = c(0.2,0.9))+theme(legend.position="none")
+      scale_alpha_manual(values = c(0.2,0.9))+theme(legend.position="none") +
+      theme(strip.text = element_text(size = 11)) + 
+      theme(axis.text=element_text(size=11), axis.title=element_text(size=12), legend.text=element_text(size=12), legend.title=element_text(size=12))
     
    
     
@@ -110,7 +114,9 @@ shinyServer(function(input, output) {
       theme_bw()+ylab("cummulative growing degree days")+xlab("season growing degree days (C)")+
       labs(linetype="significance")+
       scale_shape_manual(values = c(21, 22, 23))+
-      scale_alpha_manual(values = c(0.2,0.9))
+      scale_alpha_manual(values = c(0.2,0.9)) +
+      theme(strip.text = element_text(size = 11)) + 
+      theme(axis.text=element_text(size=11), axis.title=element_text(size=12), legend.text=element_text(size=12), legend.title=element_text(size=12))
     
 
     plot_grid(p1, p2, nrow=1, rel_widths=c(1,1.5) )
