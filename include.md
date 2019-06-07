@@ -45,7 +45,7 @@ Every week in the summers of 1958-1960, entomologists Gordon Alexander and John 
 <figcaption>John Hilliard & Gordon Alexander, 1958, photo: Don Van Horn</figcaption>
 </p>
 
-Nearly fifty years later, César Nufio realized that by conducting a resurvey of the same sites using the same protocols, he could assess how these grasshoppers had responded both to year-to-year variation in temperature at these locations, and to the larger trend of climate warming. A team led by Nufio did this work during 2006-2016. 
+Nearly fifty years later, a scientist named César Nufio realized that by conducting a resurvey of the same sites using the same protocols, he could assess how these grasshoppers had responded both to year-to-year variation in temperature at these locations, and to the larger trend of climate warming. A team led by Nufio did this work during 2006-2016. You can read more about Nufio's journey to science [here](https://trench-ed.github.io/#cesar)!
 
 <p align="center">
 <img src="http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/Cesar.jpg"/>
@@ -57,17 +57,17 @@ Nearly fifty years later, César Nufio realized that by conducting a resurvey of
 The phenology of a given grasshopper species or population may be more or less sensitive to summer temperatures depending on whether it tends to emerge from diapause early or late in the season, how far it is able to disperse, and where on the mountain it lives. This is because seasonality affects the amount of time available for development, and species that have a lower ability to disperse (e.g. wingless species) may be more **locally adapted**, or more genetically well-suited to the specific environmental conditions where it is found. Finally, at higher elevations, summers are both shorter and cooler than at lower elevations, placing even greater constraints on insect development. The table below shows the traits of six grasshopper species that were surveyed by both the historic and the contemporary researchers.
 
 
-| Grasshopper traits      |             |                 |                 |
-|-------------------------|-------------|-----------------|-----------------|
-| Species                 | Seasonality | Dispersal       | Elevation Range |
-| Aeropedellus clavatus   | Early       | Limited         | 1752-2591m      |
-| Camnula pellucida       | Late        | More dispersive | 2195-3048m      |
-| Chloealtis abdominalis  | Late        | Limited         | 2195-3048m      |
-| Melanoplus boulderensis | Early       | Limited         | 2195-3048m      |
-| Melanoplus dawsoni      | Late        | Limited         | 1752-2591m      |
-| Melanoplus sanguinipes  | Late        | More dispersive | 1752-3048m      |
+| Grasshopper traits      	|             	|                 	|                 	|
+|-------------------------	|-------------	|-----------------	|-----------------	|
+| Species                 	| Seasonality 	| Dispersal       	| Elevation Range 	|
+| Aeropedellus clavatus   	| Early       	| Limited         	| 1752-2591m      	|
+| Camnula pellucida       	| Late        	| More dispersive 	| 2195-3048m      	|
+| Chloealtis abdominalis  	| Late        	| Limited         	| 2195-3048m      	|
+| Melanoplus boulderensis 	| Early       	| Limited         	| 2195-3048m      	|
+| Melanoplus dawsoni      	| Late        	| Limited         	| 1752-2591m      	|
+| Melanoplus sanguinipes  	| Late        	| More dispersive 	| 1752-3048m      	|                              
 
-
+                 
 <p align="center">
 <img src="http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/1995-Melanoplus-mexicanus-sanguinipes.jpg"/>
 </p>
