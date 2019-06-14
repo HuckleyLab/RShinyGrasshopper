@@ -30,15 +30,15 @@ shinyServer(function(input, output) {
     to <-   as.numeric(x[2])
     print(from)
     print(to)
-    absM.all %>% filter(year >=  from & year <= to)
+    absM.all %>% filter(year >=  from & year <= to & species %in% input$species.sel & elev.lab %in% input$sites.sel)
   
     #restrict species
     ## NOT WORKING?
-    absM.all %>% filter(species %in% input$species.sel)
-    print(input$species.sel)
+    #absM.all %>% filter(species %in% input$species.sel)
+    #print(input$species.sel)
     
     #restrict sites
-    absM.all %>% filter(elev.lab %in% input$sites.sel)
+    #absM.all %>% filter(elev.lab %in% input$sites.sel)
     })
   
   dataset2 <- reactive({

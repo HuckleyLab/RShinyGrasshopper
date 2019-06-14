@@ -15,7 +15,7 @@ library(shiny)
 library(tidyverse)
 
 #specify choices
-specs= c("Aeropedellus clavatus", "Camnula pellucida", "Melanoplus dawsoni", "Melanoplus sanguinipes", "Melanoplus boulderensis")
+specs= c("Aeropedellus clavatus", "Camnula pellucida", "Chloealtis abdominalis", "Melanoplus dawsoni", "Melanoplus sanguinipes", "Melanoplus boulderensis")
 elevs= c("1752m", "2195m", "2591m", "3048m")
 
 dataset <-read.csv(paste(getwd(),"/gh-all.csv",sep = ""))
