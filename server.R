@@ -82,7 +82,7 @@ shinyServer(function(input, output) {
       facet_grid(factor(elev.lab, levels=c("3048m", "2591m", "2195m", "1752m"))~species) +
       theme_bw()+
       geom_point()+geom_line(aes(alpha=0.5))+ #+geom_smooth(se=FALSE, aes(alpha=0.5), span=2)+
-      scale_colour_gradientn(colours =rgb.palette(10))+
+      scale_colour_gradientn(colours =rev(rgb.palette(10)))+
       ylab("Development Index")+
       xlab(xlab.title)+labs(color="Mean season gdds")+
       theme(legend.position = "bottom") + guides(alpha=FALSE) +
