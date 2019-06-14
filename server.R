@@ -102,7 +102,8 @@ shinyServer(function(input, output) {
       scale_shape_manual(values = c(21, 22, 23))+
       scale_alpha_manual(values = c(0.2,0.9))+theme(legend.position="none") +
       theme(strip.text = element_text(size = 11)) + 
-      theme(axis.text=element_text(size=11), axis.title=element_text(size=12), legend.text=element_text(size=12), legend.title=element_text(size=12))
+      theme(axis.text=element_text(size=11), axis.title=element_text(size=12), legend.text=element_text(size=12), legend.title=element_text(size=12)) +
+      ggtitle("DOY when grasshoppers reach adulthood")
     
    
     
@@ -117,7 +118,8 @@ shinyServer(function(input, output) {
       scale_shape_manual(values = c(21, 22, 23))+
       scale_alpha_manual(values = c(0.2,0.9)) +
       theme(strip.text = element_text(size = 11)) + 
-      theme(axis.text=element_text(size=11), axis.title=element_text(size=12), legend.text=element_text(size=12), legend.title=element_text(size=12))
+      theme(axis.text=element_text(size=11), axis.title=element_text(size=12), legend.text=element_text(size=12), legend.title=element_text(size=12)) +
+      ggtitle("Cumulative GDDs when grasshoppers reach adulthood")
     
 
     plot_grid(p1, p2, nrow=1, rel_widths=c(1,1.5) )
