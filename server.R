@@ -47,10 +47,10 @@ shinyServer(function(input, output) {
     
     #restrict species
     ## NOT WORKING?
-    absM.all.ssy %>% filter(species %in% input$species.sel2)
+    absM.all.ssy %>% filter(species %in% input$species.sel2 & elev.lab %in% input$sites.sel2)
     
     #restrict sites
-    absM.all.ssy %>% filter(elev.lab %in% input$sites.sel2)
+    #absM.all.ssy %>% filter(elev.lab %in% input$sites.sel2)
     
   })
   print(getwd())
