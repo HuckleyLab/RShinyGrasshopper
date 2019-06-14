@@ -19,6 +19,7 @@ absM.all.ssy=read.csv(paste(getwd(),"/gh-all.ssy.csv",sep = ""))
 #absM.all=read.csv(text=GET("https://github.com/HuckleyLab/RShinyGrasshopper/gh-all.csv"))
 #absM.all.ssy=read.csv(text=GET("https://github.com/HuckleyLab/RShinyGrasshopper/gh-all.ssy.csv"), sep = "")
 
+
 # Define server logic to do filtering
 shinyServer(function(input, output) {
   
@@ -78,7 +79,7 @@ shinyServer(function(input, output) {
     
     ggplot(data=dataset(), aes_string(x=input$x, y = 'DI', color='Cdd_siteave', 
       group='siteyear', linetype='period'))+
-      facet_grid(elev.lab~species) +
+      facet_grid(factor(elev.lab, levels=c("3048m", "2591m", "2195m", "1752m"))~species) +
       theme_bw()+
       geom_point()+geom_line(aes(alpha=0.5))+ #+geom_smooth(se=FALSE, aes(alpha=0.5), span=2)+
       scale_colour_gradientn(colours =rgb.palette(10))+
@@ -96,7 +97,7 @@ shinyServer(function(input, output) {
       geom_point(aes(shape=period, fill=species, alpha=period, stroke=1), size=3)+
       geom_point(aes(shape=period, fill=NULL, stroke=1), size=3)+
       geom_smooth(method="lm",se=F, aes(linetype=sig.doy))+
-      facet_wrap(~elev.lab, ncol=1, scales="free") +
+      facet_wrap(~factor(elev.lab, levels=c("3048m", "2591m", "2195m", "1752m")), ncol=1, scales="free") +
       theme_bw()+ylab("day of year")+xlab("season growing degree days (C)")+
       scale_shape_manual(values = c(21, 22, 23))+
       scale_alpha_manual(values = c(0.2,0.9))+theme(legend.position="none") +
@@ -110,7 +111,7 @@ shinyServer(function(input, output) {
       geom_point(aes(shape=period, fill=species, alpha=period, stroke=1), size=3)+
       geom_point(aes(shape=period, fill=NULL, stroke=1), size=3)+
       geom_smooth(method="lm",se=F, aes(linetype=sig.gdd))+
-      facet_wrap(~elev.lab, ncol=1, scales="free") +
+      facet_wrap(~factor(elev.lab, levels=c("3048m", "2591m", "2195m", "1752m")), ncol=1, scales="free") +
       theme_bw()+ylab("cummulative growing degree days")+xlab("season growing degree days (C)")+
       labs(linetype="significance")+
       scale_shape_manual(values = c(21, 22, 23))+
