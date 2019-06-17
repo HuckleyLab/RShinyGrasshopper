@@ -25,14 +25,14 @@ shinyServer(function(input, output) {
   
   dataset <- reactive({
    #restrict years
-    x <- strsplit(as.character(input$year), "\\s+")
-    print(x)
-    from <- as.numeric(x[1])
-    to <-   as.numeric(x[2])
-    print(from)
-    print(to)
-    absM.all %>% filter(year >=  from & year <= to & species %in% input$species.sel & elev.lab %in% input$sites.sel)
-  
+   #x <- strsplit(as.character(input$year), "\\s+")
+   #print(x)
+   #from <- as.numeric(x[1])
+   #to <-   as.numeric(x[2])
+   #print(from)
+   #print(to)
+    
+    absM.all %>% filter(period %in% input$period & species %in% input$species.sel & elev.lab %in% input$sites.sel)
     #restrict species
     ## NOT WORKING?
     #absM.all %>% filter(species %in% input$species.sel)
@@ -84,10 +84,10 @@ shinyServer(function(input, output) {
       geom_point()+geom_line(aes(alpha=0.5))+ #+geom_smooth(se=FALSE, aes(alpha=0.5), span=2)+
       scale_colour_gradientn(colours =rev(rgb.palette(10)))+
       ylab("Development Index")+
-      xlab(xlab.title)+labs(color="Mean season gdds")+
+      xlab(xlab.title)+labs(linetype="Period", color="Mean season GDDs")+
       theme(legend.position = "bottom") + guides(alpha=FALSE) +
       theme(strip.text = element_text(size = 10)) + 
-      theme(axis.text=element_text(size=12), axis.title=element_text(size=12), legend.text=element_text(size=12), legend.title=element_text(size=12))
+      theme(axis.text=element_text(size=12), axis.title=element_text(size=12), legend.text=element_text(size=11), legend.title=element_text(size=12))
     
   })
   

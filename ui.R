@@ -35,13 +35,13 @@ fluidPage(
   # Place the filter horizontally
  fluidRow(
      column(4,selectInput('x', 'Predictor variable (X)', c('Day of Year'='ordinal','Cumulative GDDs'='cdd_sum'))),
-     column(4,    sliderInput('year', 'Range of years to plot', 
-                              min=min(dataset$year),
-                              max=max(dataset$year), 
-                              value=c(min(dataset$year), 
-                                      max(dataset$year)),
-                              format = "####",sep = "",step = 1))
-     
+    #column(4,    sliderInput('year', 'Range of years to plot', 
+    #                        min=min(dataset$year),
+    #                        max=max(dataset$year), 
+    #                        value=c(min(dataset$year), 
+    #                        max(dataset$year)),
+    #                        format = "####",sep = "",step = 1))
+     column(4, selectInput('period', 'Select period to plot', c('Initial(1958-1960)'='initial', 'Resurvey(2006-2015)'='resurvey'), multiple = TRUE, selectize=FALSE, selected = c('initial', 'resurvey')))
      #column(4,selectInput('y', 'Y',  c('Developmental Index'='DI'))),
     #column(4,selectInput('color', 'Color', c('Mean Season GDDs'='Cdd_siteave')))
   ),
