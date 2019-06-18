@@ -41,7 +41,7 @@ fluidPage(
     #                        value=c(min(dataset$year), 
     #                        max(dataset$year)),
     #                        format = "####",sep = "",step = 1))
-     column(4, selectInput('period', 'Select period to plot', c('Initial(1958-1960)'='initial', 'Resurvey(2006-2015)'='resurvey'), multiple = TRUE, selectize=FALSE, selected = c('initial', 'resurvey')))
+     column(4, selectInput('period', 'Select period to plot', c('Initial (1958-1960)'='initial', 'Resurvey (2006-2015)'='resurvey'), multiple = TRUE, selectize=FALSE, selected = c('initial', 'resurvey')))
      #column(4,selectInput('y', 'Y',  c('Developmental Index'='DI'))),
     #column(4,selectInput('color', 'Color', c('Mean Season GDDs'='Cdd_siteave')))
   ),

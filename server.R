@@ -15,6 +15,8 @@ rgb.palette <- colorRampPalette(c("red", "orange", "blue"), space = "rgb")
 #load data
 absM.all=read.csv(paste(getwd(),"/gh-all.csv",sep = ""))
 absM.all.ssy=read.csv(paste(getwd(),"/gh-all.ssy.csv",sep = ""))
+
+elevs= c("1752m", "2195m", "2591m", "3048m")
 # Read data from Github
 #absM.all=read.csv(text=GET("https://github.com/HuckleyLab/RShinyGrasshopper/gh-all.csv"))
 #absM.all.ssy=read.csv(text=GET("https://github.com/HuckleyLab/RShinyGrasshopper/gh-all.ssy.csv"), sep = "")
@@ -90,9 +92,14 @@ shinyServer(function(input, output) {
       theme(axis.text=element_text(size=12), axis.title=element_text(size=12), legend.text=element_text(size=11), legend.title=element_text(size=12))
     
   })
-  
-  output$secondPlot <- renderPlot({
-    
+    #set up plot height for secondPlot
+    height_all <- function(){
+      if(identical(elevs, input$sites.sel2)) return (800)
+        else return (500)
+    }
+
+    output$secondPlot <- renderPlot({
+
     p1=ggplot(data=dataset2(), aes(x=cdd_seas, y = doy_adult, color=species))+
       geom_point(aes(shape=period, fill=species, alpha=period, stroke=1), size=3)+
       geom_point(aes(shape=period, fill=NULL, stroke=1), size=3)+
@@ -105,7 +112,6 @@ shinyServer(function(input, output) {
       theme(axis.text=element_text(size=11), axis.title=element_text(size=12), legend.text=element_text(size=12), legend.title=element_text(size=12)) +
       ggtitle("DOY when grasshoppers reach adulthood")
     
-   
     
     #GDD
     p2=ggplot(data=dataset2(), aes(x=cdd_seas, y = gdd_adult, color=species))+
@@ -124,6 +130,6 @@ shinyServer(function(input, output) {
 
     plot_grid(p1, p2, nrow=1, rel_widths=c(1,1.5) )
     
-  })
+  }, height = height_all)
   
 })
