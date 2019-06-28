@@ -79,6 +79,7 @@ shinyServer(function(input, output) {
     xlab.title= "Day of year"
     if(input$x=="cdd_sum") xlab.title= "Cumulative growing degree days (GDDs)"
     
+    if(input$facet=="Species"){
     ggplot(data=dataset(), aes_string(x=input$x, y = 'DI', color='Cdd_siteave', 
       group='siteyear', linetype='period'))+
       facet_grid(factor(elev.lab, levels=c("3048m", "2591m", "2195m", "1752m"))~species) +
@@ -91,8 +92,21 @@ shinyServer(function(input, output) {
       theme(strip.text = element_text(size = 10)) + 
       theme(legend.key.width=unit(5, "line")) +
       theme(axis.text=element_text(size=12), axis.title=element_text(size=12), legend.text=element_text(size=11), legend.title=element_text(size=12))
-    
-  })
+    }
+    else{
+      ggplot(data=dataset(), aes_string(x=input$x, y = 'DI', color='species', 
+        linetype='period'))+
+        facet_grid(factor(elev.lab, levels=c("3048m", "2591m", "2195m", "1752m"))~year) +
+        theme_bw()+
+        geom_point()+geom_line(aes(alpha=0.5))+ #+geom_smooth(se=FALSE, aes(alpha=0.5), span=2)+
+        ylab("Development Index")+
+        xlab(xlab.title)+labs(linetype="Period", color="Species")+
+        theme(legend.position = "bottom") + guides(alpha=FALSE) +
+        theme(strip.text = element_text(size = 10)) + 
+        theme(legend.key.width=unit(5, "line")) +
+        theme(axis.text=element_text(size=10.5), axis.title=element_text(size=12), legend.text=element_text(size=11), legend.title=element_text(size=12))
+    }
+  }, width=940)
     #set up plot height for secondPlot
     height_all <- function(){
       if(identical(elevs, input$sites.sel2)) return (800)

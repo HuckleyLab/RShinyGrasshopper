@@ -36,6 +36,7 @@ fluidPage(
  hr(),
   # Place the filter horizontally
  fluidRow(
+     column(4,selectInput('facet', 'Select variable for columns', c("Species", "Year"))),
      column(4,selectInput('x', 'Predictor variable (X)', c('Day of Year'='ordinal','Cumulative GDDs'='cdd_sum'))),
     #column(4,    sliderInput('year', 'Range of years to plot', 
     #                        min=min(dataset$year),
