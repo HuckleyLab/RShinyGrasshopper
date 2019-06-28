@@ -34,7 +34,7 @@ shinyServer(function(input, output) {
    #print(from)
    #print(to)
     
-    absM.all %>% filter(period %in% input$period & species %in% input$species.sel & elev.lab %in% input$sites.sel)
+    absM.all %>% filter(year %in% input$period & species %in% input$species.sel & elev.lab %in% input$sites.sel)
     #restrict species
     ## NOT WORKING?
     #absM.all %>% filter(species %in% input$species.sel)
@@ -89,6 +89,7 @@ shinyServer(function(input, output) {
       xlab(xlab.title)+labs(linetype="Period", color="Mean season GDDs")+
       theme(legend.position = "bottom") + guides(alpha=FALSE) +
       theme(strip.text = element_text(size = 10)) + 
+      theme(legend.key.width=unit(5, "line")) +
       theme(axis.text=element_text(size=12), axis.title=element_text(size=12), legend.text=element_text(size=11), legend.title=element_text(size=12))
     
   })
@@ -109,7 +110,7 @@ shinyServer(function(input, output) {
       scale_shape_manual(values = c(21, 22, 23))+
       scale_alpha_manual(values = c(0.2,0.9))+theme(legend.position="none") +
       theme(strip.text = element_text(size = 11)) + 
-      theme(axis.text=element_text(size=11), axis.title=element_text(size=12), legend.text=element_text(size=12), legend.title=element_text(size=12)) +
+      theme(plot.title = element_text(size=14), axis.text=element_text(size=11), axis.title=element_text(size=12), legend.text=element_text(size=12), legend.title=element_text(size=12)) +
       ggtitle("DOY when grasshoppers reach adulthood")
     
     
@@ -124,7 +125,7 @@ shinyServer(function(input, output) {
       scale_shape_manual(values = c(21, 22, 23))+
       scale_alpha_manual(values = c(0.2,0.9)) +
       theme(strip.text = element_text(size = 11)) + 
-      theme(axis.text=element_text(size=11), axis.title=element_text(size=12), legend.text=element_text(size=12), legend.title=element_text(size=12)) +
+      theme(plot.title = element_text(size=14), axis.text=element_text(size=11), axis.title=element_text(size=12), legend.text=element_text(size=12), legend.title=element_text(size=12)) +
       ggtitle("Cumulative GDDs when grasshoppers reach adulthood")
     
 
