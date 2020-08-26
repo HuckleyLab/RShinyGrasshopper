@@ -15,9 +15,9 @@ library(shiny)
 library(tidyverse)
 
 #specify choices
-specs= c("Aeropedellus clavatus", "Melanoplus boulderensis", "Chloealtis abdominalis", "Camnula pellucida", "Melanoplus sanguinipes", "Melanoplus dawsoni")
+specs= c("Aeropedellus clavatus", "Melanoplus boulderensis", "Chloealtis abdominalis", "Camnula pellucida", "Melanoplus dawsoni", "Melanoplus sanguinipes")
 elevs= c("1752m", "2195m", "2591m", "3048m")
-initials = c("1958", "1959", "1960") 
+initials = c("1958", "1959", "1960", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015") 
 resurveys = c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015")
 
 dataset <-read.csv(paste(getwd(),"/gh-all.csv",sep = ""))
@@ -44,14 +44,14 @@ fluidPage(
     #                        value=c(min(dataset$year), 
     #                        max(dataset$year)),
     #                        format = "####",sep = "",step = 1))
-     column(4, selectInput('period', 'Select period to plot', choices = list(Initial = as.character(initials), Resurvey = as.character(resurveys)), multiple = TRUE, selectize=TRUE, selected = c(initials,resurveys)))
+     column(4, selectInput('period', 'Select years to plot', choices = as.character(initials), selectize = FALSE, multiple = TRUE, selected = c(initials)))
      #column(4,selectInput('y', 'Y',  c('Developmental Index'='DI'))),
     #column(4,selectInput('color', 'Color', c('Mean Season GDDs'='Cdd_siteave')))
   ),
  
  #pick species and sites 
  fluidRow(
-   column(4,selectInput('species.sel', 'Select species to plot', choices= as.character(specs), multiple=TRUE, selectize=FALSE, selected=specs)),
+   column(4,selectInput('species.sel', 'Select species to plot', choices= as.character(specs), multiple=TRUE, selectize=FALSE, selected="Melanoplus sanguinipes")),
    column(4,selectInput('sites.sel', 'Select sites to plot', choices= as.character(elevs), multiple=TRUE, selectize=FALSE, selected=elevs))
  ),
  
@@ -70,7 +70,7 @@ fluidPage(
           includeMarkdown("include2.md")
    )),
  fluidRow(
-   column(4,selectInput('species.sel2', 'Select species to plot', choices= specs, multiple=TRUE, selectize=FALSE, selected=specs)),
+   column(4,selectInput('species.sel2', 'Select species to plot', choices= specs, multiple=TRUE, selectize=FALSE, selected="Melanoplus sanguinipes")),
    column(4,selectInput('sites.sel2', 'Select sites to plot', choices= elevs, multiple=TRUE, selectize=FALSE, selected=elevs))
    
    ),

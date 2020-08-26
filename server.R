@@ -108,12 +108,13 @@ shinyServer(function(input, output) {
     }
   }, width=940)
     #set up plot height for secondPlot
-    height_all <- function(){
-      if(identical(elevs, input$sites.sel2)) return (800)
-        else return (500)
-    }
+  height_all <- function(){
+    if(identical(elevs, input$sites.sel2)) return (800)
+      else return (500)
+  }
 
-    output$secondPlot <- renderPlot({
+  output$secondPlot <- renderPlot({
+    colors <- c("Aeropedellus clavatus" = '#b35806', "Melanoplus boulderensis" = '#f1a340', "Chloealtis abdominalis" = '#fee0b6', "Camnula pellucida" = '#d8daeb', "Melanoplus dawsoni" = '#998ec3', "Melanoplus sanguinipes" = '#542788')
 
     p1=ggplot(data=dataset2(), aes(x=cdd_seas, y = doy_adult, color=species))+
       geom_point(aes(shape=period, fill=species, alpha=period, stroke=1), size=3)+
@@ -121,6 +122,7 @@ shinyServer(function(input, output) {
       geom_smooth(method="lm",se=F, aes(linetype=sig.doy))+
       facet_wrap(~factor(elev.lab, levels=c("3048m", "2591m", "2195m", "1752m")), ncol=1, scales="free") +
       theme_bw()+ylab("day of year")+xlab("season growing degree days (C)")+
+      scale_color_manual(values = colors) +
       scale_shape_manual(values = c(21, 22, 23))+
       scale_alpha_manual(values = c(0.2,0.9))+theme(legend.position="none") +
       theme(strip.text = element_text(size = 11)) + 
@@ -136,6 +138,7 @@ shinyServer(function(input, output) {
       facet_wrap(~factor(elev.lab, levels=c("3048m", "2591m", "2195m", "1752m")), ncol=1, scales="free") +
       theme_bw()+ylab("cummulative growing degree days")+xlab("season growing degree days (C)")+
       labs(linetype="significance")+
+      scale_color_manual(values = colors) +
       scale_shape_manual(values = c(21, 22, 23))+
       scale_alpha_manual(values = c(0.2,0.9)) +
       theme(strip.text = element_text(size = 11)) + 
@@ -143,8 +146,8 @@ shinyServer(function(input, output) {
       ggtitle("Cumulative GDDs when grasshoppers reach adulthood")
     
 
-    plot_grid(p1, p2, nrow=1, rel_widths=c(1,1.5) )
-    
+      plot_grid(p1, p2, nrow=1, rel_widths=c(1,1.5) )
+  
   }, height = height_all)
   
 })

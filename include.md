@@ -59,11 +59,11 @@ The phenology of a given grasshopper species or population may be more or less s
 
 | Grasshopper traits      	|             	|                 	|                 	|
 |-------------------------	|-------------	|-----------------	|-----------------	|
-| Species                 	| Seasonality 	| Dispersal       	| Elevation Range 	|
+| Species                 	| Seasonality&nbsp;&nbsp; 	| Dispersal       	| Elevation Range 	|
 | Aeropedellus clavatus   	| Early       	| Limited         	| 1752-2591m      	|
-| Camnula pellucida       	| Late        	| More dispersive 	| 2195-3048m      	|
+| Camnula pellucida       	| Late        	| More dispersive&nbsp;&nbsp; 	| 2195-3048m      	|
 | Chloealtis abdominalis  	| Late        	| Limited         	| 2195-3048m      	|
-| Melanoplus boulderensis 	| Early       	| Limited         	| 2195-3048m      	|
+| Melanoplus boulderensis&nbsp;&nbsp; 	| Early       	| Limited         	| 2195-3048m      	|
 | Melanoplus dawsoni      	| Late        	| Limited         	| 1752-2591m      	|
 | Melanoplus sanguinipes  	| Late        	| More dispersive 	| 1752-3048m      	|                              
 
