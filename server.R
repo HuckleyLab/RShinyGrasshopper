@@ -56,7 +56,6 @@ shinyServer(function(input, output) {
     #absM.all.ssy %>% filter(elev.lab %in% input$sites.sel2)
     
   })
-  print(getwd())
   
   
   output$trendPlot <- renderPlot({

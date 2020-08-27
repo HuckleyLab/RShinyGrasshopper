@@ -17,7 +17,7 @@ Temperature is an especially influential factor in the lives of **ectotherms**, 
 <img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Grasshoppermetasnodgrass.jpg"/, height="600 px">
 </p>
 <p align="center">
-<figcaption>Grasshopper developmental stages, image: Wikimedia</figcaption>
+Grasshopper developmental stages, image: Wikimedia
 </p>
 
 ### Colorado Grasshoppers: Then and Now
@@ -28,21 +28,21 @@ Every week in the summers of 1958-1960, entomologists Gordon Alexander and John 
 <img src="http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/3005-2-mis-Bureau-stdsCLEAN.jpg"/>
 </p>
 <p align="center">
-<figcaption>Field site in Boulder, CO, 1960, photo: Don Van Horn</figcaption>
+Field site in Boulder, CO, 1960, photo: Don Van Horn
 </p>
 
 <p align="center">
 <img src="http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/2676-J-Hilliard-Mrs-A.jpg"/>
 </p>
 <p align="center">
-<figcaption>John Hilliard & Marion Isely (Gordon Alexander's wife, also a trained biologist) at Guanella Pass, 1959, photo: Don Van Horn</figcaption>
+John Hilliard & Marion Isely (Gordon Alexander's wife, also a trained biologist) at Guanella Pass, 1959, photo: Don Van Horn
 </p>
 
 <p align="center">
 <img src="http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/2056-Hilliard-and-Alexander-1958.jpg"/>
 </p>
 <p align="center">
-<figcaption>John Hilliard & Gordon Alexander, 1958, photo: Don Van Horn</figcaption>
+John Hilliard & Gordon Alexander, 1958, photo: Don Van Horn
 </p>
 
 Nearly fifty years later, a scientist named César Nufio realized that by conducting a resurvey of the same sites using the same protocols, he could assess how these grasshoppers had responded both to year-to-year variation in temperature at these locations, and to the larger trend of climate warming. A team led by Nufio did this work during 2006-2016. You can read more about Nufio's journey to science [here](https://trench-ed.github.io/#cesar)!
@@ -51,7 +51,7 @@ Nearly fifty years later, a scientist named César Nufio realized that by conduc
 <img src="http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/Cesar.jpg"/>
 </p>
 <p align="center">
-<figcaption>César gets ready to sweep for grasshoppers, image: César Nufio</figcaption>
+César gets ready to sweep for grasshoppers, image: César Nufio
 </p>
 
 The phenology of a given grasshopper species or population may be more or less sensitive to summer temperatures depending on whether it tends to emerge from diapause early or late in the season, how far it is able to disperse, and where on the mountain it lives. This is because seasonality affects the amount of time available for development, and species that have a lower ability to disperse (e.g. wingless species) may be more **locally adapted**, or more genetically well-suited to the specific environmental conditions where it is found. Finally, at higher elevations, summers are both shorter and cooler than at lower elevations, placing even greater constraints on insect development. The table below shows the traits of six grasshopper species that were surveyed by both the historic and the contemporary researchers.
@@ -72,14 +72,14 @@ The phenology of a given grasshopper species or population may be more or less s
 <img src="http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/1995-Melanoplus-mexicanus-sanguinipes.jpg"/>
 </p>
 <p align="center">
-<figcaption>Melanoplus sanguinipes, image: Don Van Horn</figcaption>
+Melanoplus sanguinipes, image: Don Van Horn
 </p>
 
 <p align="center">
 <img src="http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/2054-Chloealtis-addominalis.jpg"/>
 </p>
 <p align="center">
-<figcaption>Chloealtis addominalis, image: Don Van Horn</figcaption>
+Chloealtis addominalis, image: Don Van Horn
 </p>
 
 ### This App
@@ -95,7 +95,7 @@ The second term is **development index**. This has values that range from 1 to 6
 <img src="http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/2017-Aeropedellus-clavatus-F.jpg"/>
 </p>
 <p align="center">
-<figcaption>Aeropedellus clavatus, image: Don Van Horn</figcaption>
+Aeropedellus clavatus, image: Don Van Horn
 </p>
 
 
