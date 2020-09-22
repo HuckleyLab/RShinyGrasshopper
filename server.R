@@ -1,152 +1,105 @@
-#
-# Part of trench project (Grasshoppers)
-# author Aji John https://github.com/ajijohn
-# adapted from Shiny 
-# Server
-#
 
-library(shiny)
-library(cowplot)
-library(httr)
-library(RCurl)
-
-rgb.palette <- colorRampPalette(c("red", "orange", "blue"), space = "rgb")
-
-#load data
-absM.all=read.csv(paste(getwd(),"/gh-all.csv",sep = ""))
-absM.all.ssy=read.csv(paste(getwd(),"/gh-all.ssy.csv",sep = ""))
-
-elevs= c("1752m", "2195m", "2591m", "3048m")
 # Read data from Github
 #absM.all=read.csv(text=GET("https://github.com/HuckleyLab/RShinyGrasshopper/gh-all.csv"))
 #absM.all.ssy=read.csv(text=GET("https://github.com/HuckleyLab/RShinyGrasshopper/gh-all.ssy.csv"), sep = "")
+
+# Load data
+absM.all = read.csv("gh-all.csv")
+absM.all.ssy = read.csv("gh-all.ssy.csv")
+
+# Changing to bad colnames just so that it shows the right tooltops when running ggplotly. Couldn't figure out a way to change names for tooltip.
+colnames(absM.all)[24] <- "Mean season GDDs"
+colnames(absM.all)[16] <- "Cumulative GDDs"
+colnames(absM.all)[1] <- "Day of year"
+colnames(absM.all)[18] <- "Development index"
+absM.all$`Mean season GDDs` <- round(absM.all$`Mean season GDDs`, digits = 2)
+absM.all$`Development index` <- round(absM.all$`Development index`, digits = 2)
+
+
+elevs= c("3048m", "2591m", "2195m", "1752m")
+rgb.palette <- colorRampPalette(c("red", "orange", "blue"), space = "rgb")
 
 
 # Define server logic to do filtering
 shinyServer(function(input, output) {
   
   dataset <- reactive({
-   #restrict years
-   #x <- strsplit(as.character(input$year), "\\s+")
-   #print(x)
-   #from <- as.numeric(x[1])
-   #to <-   as.numeric(x[2])
-   #print(from)
-   #print(to)
-    
     absM.all %>% filter(year %in% input$period & species %in% input$species.sel & elev.lab %in% input$sites.sel)
-    #restrict species
-    ## NOT WORKING?
-    #absM.all %>% filter(species %in% input$species.sel)
-    #print(input$species.sel)
-    
-    #restrict sites
-    #absM.all %>% filter(elev.lab %in% input$sites.sel)
-    })
+  })
   
   dataset2 <- reactive({
-
-    absM.all.ssy
-    
-    #restrict species
-    ## NOT WORKING?
     absM.all.ssy %>% filter(species %in% input$species.sel2 & elev.lab %in% input$sites.sel2)
-    
-    #restrict sites
-    #absM.all.ssy %>% filter(elev.lab %in% input$sites.sel2)
-    
   })
   
   
-  output$trendPlot <- renderPlot({
+  output$trendPlot <- renderPlotly({
     
-    #TODO Make Y Label dynamic
+    xlab.title = ifelse(input$x == "Cumulative GDDs", "Cumulative growing degree days (GDDs)", "Day of year")
     
-    # trend plot with #add trendlines
-    # ggplot(data=dataset(), aes_string(x=input$x, y = input$y, color=input$color)) +
-    #   geom_point(alpha=0.8) +
-    #   geom_smooth(se = FALSE, method = lm) +
-    #   theme_classic()+ xlab(input$x) +
-    #   #theme(legend.position="none")+
-    #   scale_color_gradientn(colours = rev(heat.colors(5)))+ 
-    #   theme(legend.key.width=unit(1,"cm"))+
-    #   #labs(color="Developmental Temperature (°C)") +labs(tag="(a)") +
-    #   geom_abline(aes(slope=syear.slope,intercept=syear.int))+
-    #   facet_wrap(~region.lab)
+    xvar = ifelse(input$x == "Cumulative GDDs", "`Cumulative GDDs`", "`Day of year`")
+
+    p <- ggplot(data = dataset(), aes_string(x = xvar, y = "`Development index`", color = "`Mean season GDDs`", group = 'year')) + 
+      geom_point(size = 0.7) + geom_line(aes(linetype = period, alpha=0.5)) +
+      scale_colour_gradientn(colours = rev(rgb.palette(10))) + 
+      labs(x = xlab.title, y = "Development Index", linetype = "") +
+      theme(legend.position = "bottom") + 
+      guides(alpha = FALSE)
     
-    #set up x lab
-    xlab.title= "Day of year"
-    if(input$x=="cdd_sum") xlab.title= "Cumulative growing degree days (GDDs)"
-    
-    if(input$facet=="Species"){
-    ggplot(data=dataset(), aes_string(x=input$x, y = 'DI', color='Cdd_siteave', 
-      group='siteyear', linetype='period'))+
-      facet_grid(factor(elev.lab, levels=c("3048m", "2591m", "2195m", "1752m"))~species) +
-      theme_bw()+
-      geom_point()+geom_line(aes(alpha=0.5))+ #+geom_smooth(se=FALSE, aes(alpha=0.5), span=2)+
-      scale_colour_gradientn(colours =rev(rgb.palette(10)))+
-      ylab("Development Index")+
-      xlab(xlab.title)+labs(linetype="Period", color="Mean season GDDs")+
-      theme(legend.position = "bottom") + guides(alpha=FALSE) +
-      theme(strip.text = element_text(size = 10)) + 
-      theme(legend.key.width=unit(5, "line")) +
-      theme(axis.text=element_text(size=12), axis.title=element_text(size=12), legend.text=element_text(size=11), legend.title=element_text(size=12))
+    if(input$facet == "Species"){
+      p <- p + facet_grid(factor(elev.lab, levels = elevs) ~ species)
+    } else {
+      p <- p + facet_grid(factor(elev.lab, levels = elevs) ~ year)
     }
-    else{
-      ggplot(data=dataset(), aes_string(x=input$x, y = 'DI', color='species', 
-        linetype='period'))+
-        facet_grid(factor(elev.lab, levels=c("3048m", "2591m", "2195m", "1752m"))~year) +
-        theme_bw()+
-        geom_point()+geom_line(aes(alpha=0.5))+ #+geom_smooth(se=FALSE, aes(alpha=0.5), span=2)+
-        ylab("Development Index")+
-        xlab(xlab.title)+labs(linetype="Period", color="Species")+
-        theme(legend.position = "bottom") + guides(alpha=FALSE) +
-        theme(strip.text = element_text(size = 10)) + 
-        theme(legend.key.width=unit(5, "line")) +
-        theme(axis.text=element_text(size=10.5), axis.title=element_text(size=12), legend.text=element_text(size=11), legend.title=element_text(size=12))
-    }
-  }, width=940)
-    #set up plot height for secondPlot
+    
+    ggplotly(p, tooltip = c("Mean season GDDs", "year", "Cumulative GDDs", "Development index", "Day of year")) %>%
+      layout(legend = list(orientation = "h", x = -0.1, y = -0.1))
+  })
+  
+  #set up plot height for secondPlot
   height_all <- function(){
     if(identical(elevs, input$sites.sel2)) return (800)
       else return (500)
   }
 
   output$secondPlot <- renderPlot({
-    colors <- c("Aeropedellus clavatus" = '#b35806', "Melanoplus boulderensis" = '#f1a340', "Chloealtis abdominalis" = '#fee0b6', "Camnula pellucida" = '#d8daeb', "Melanoplus dawsoni" = '#998ec3', "Melanoplus sanguinipes" = '#542788')
+    colors <- c("Aeropedellus clavatus" = '#b35806', 
+                "Melanoplus boulderensis" = '#f1a340', 
+                "Chloealtis abdominalis" = '#fee0b6', 
+                "Camnula pellucida" = '#d8daeb', 
+                "Melanoplus dawsoni" = '#998ec3', 
+                "Melanoplus sanguinipes" = '#542788')
 
-    p1=ggplot(data=dataset2(), aes(x=cdd_seas, y = doy_adult, color=species))+
-      geom_point(aes(shape=period, fill=species, alpha=period, stroke=1), size=3)+
-      geom_point(aes(shape=period, fill=NULL, stroke=1), size=3)+
-      geom_smooth(method="lm",se=F, aes(linetype=sig.doy))+
-      facet_wrap(~factor(elev.lab, levels=c("3048m", "2591m", "2195m", "1752m")), ncol=1, scales="free") +
-      theme_bw()+ylab("day of year")+xlab("season growing degree days (C)")+
-      scale_color_manual(values = colors) +
-      scale_shape_manual(values = c(21, 22, 23))+
-      scale_alpha_manual(values = c(0.2,0.9))+theme(legend.position="none") +
-      theme(strip.text = element_text(size = 11)) + 
-      theme(plot.title = element_text(size=14), axis.text=element_text(size=11), axis.title=element_text(size=12), legend.text=element_text(size=12), legend.title=element_text(size=12)) +
-      ggtitle("DOY when grasshoppers reach adulthood")
-    
+    p1 <- ggplot(data = dataset2(), aes(x = cdd_seas, y = doy_adult, color = species)) +
+      geom_smooth(method = "lm", se = F, aes(linetype = sig.doy)) +
+      ylab("Day of year") +
+      ggtitle("Day of year when grasshoppers reach adulthood")
     
     #GDD
-    p2=ggplot(data=dataset2(), aes(x=cdd_seas, y = gdd_adult, color=species))+
-      geom_point(aes(shape=period, fill=species, alpha=period, stroke=1), size=3)+
-      geom_point(aes(shape=period, fill=NULL, stroke=1), size=3)+
-      geom_smooth(method="lm",se=F, aes(linetype=sig.gdd))+
-      facet_wrap(~factor(elev.lab, levels=c("3048m", "2591m", "2195m", "1752m")), ncol=1, scales="free") +
-      theme_bw()+ylab("cummulative growing degree days")+xlab("season growing degree days (C)")+
-      labs(linetype="significance")+
-      scale_color_manual(values = colors) +
-      scale_shape_manual(values = c(21, 22, 23))+
-      scale_alpha_manual(values = c(0.2,0.9)) +
-      theme(strip.text = element_text(size = 11)) + 
-      theme(plot.title = element_text(size=14), axis.text=element_text(size=11), axis.title=element_text(size=12), legend.text=element_text(size=12), legend.title=element_text(size=12)) +
-      ggtitle("Cumulative GDDs when grasshoppers reach adulthood")
+    p2 <- ggplot(data = dataset2(), aes(x = cdd_seas, y = gdd_adult, color = species)) +
+      geom_smooth(method = "lm", se = F, aes(linetype = sig.gdd)) +
+      ylab("Cummulative growing degree days") +
+      ggtitle("Cumulative GDDs when grasshoppers reach adulthood") +
+      labs(linetype = "significance")
     
+    default <- function(p) {
+      p <- p +
+        geom_point(aes(shape = period, fill = species, alpha = period, stroke = 1), size = 3) +
+        geom_point(aes(shape = period, fill = NULL, stroke = 1), size = 3) +
+        facet_wrap( ~ factor(elev.lab, levels = elevs), ncol = 1, scales = "free") +
+        scale_color_manual(values = colors) +
+        scale_shape_manual(values = c(21, 22, 23)) +
+        scale_alpha_manual(values = c(0.2, 0.9)) + 
+        xlab("Season growing degree days (°C)") +
+        theme_bw() +
+        theme(strip.text = element_text(size = 11), plot.title = element_text(size = 14), 
+              axis.text = element_text(size = 11), axis.title = element_text(size = 12), 
+              legend.text = element_text(size = 12), legend.title = element_text(size = 12))
+    }
+    
+    p1 <- default(p1) + theme(legend.position = "none")
+    p2 <- default(p2)
+    plot_grid(p1, p2, nrow = 1, rel_widths = c(1, 1.5))
 
-      plot_grid(p1, p2, nrow=1, rel_widths=c(1,1.5) )
-  
   }, height = height_all)
   
 })

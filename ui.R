@@ -1,18 +1,11 @@
-#
-#
-#
-# Part of trench project
-# author Aji John https://github.com/ajijohn
-# UI
-#
-# todo
-# axis labels
-# setae length
-# 
-#
 library(shiny)
 library(tidyverse)
 library(shinyWidgets)
+library(plotly)
+library(cowplot)
+library(httr)
+library(RCurl)
+
 
 #specify choices
 specs= c("Aeropedellus clavatus", "Melanoplus boulderensis", "Chloealtis abdominalis", "Camnula pellucida", "Melanoplus dawsoni", "Melanoplus sanguinipes")
@@ -20,7 +13,6 @@ elevs= c("1752m", "2195m", "2591m", "3048m")
 initials = c("1958", "1959", "1960") 
 resurveys = c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015")
 
-dataset <-read.csv(paste(getwd(),"/gh-all.csv",sep = ""))
 
 # Define UI 
 shinyUI(
@@ -29,47 +21,25 @@ shinyUI(
     includeMarkdown("include.md"),
     hr(),
     # Place the filter horizontally
-   # sidebarLayout(
-   #   sidebarPanel(
-   #     selectInput('facet', 'Select variable for columns', c("Species", "Year")),
-   #     selectInput('x', 'Predictor variable (X)', c('Day of Year'='ordinal','Cumulative GDDs'='cdd_sum')),
-   #     pickerInput('period', 'Select years to plot', 
-   #                 choices = list(Initial = as.character(initials), Resurvey = as.character(resurveys)), 
-   #                 options = list(`actions-box` = TRUE), 
-   #                 multiple = TRUE, 
-   #                 selected = initials),
-   #     selectInput('species.sel', 'Select species to plot', choices= as.character(specs), multiple=TRUE, selected="Melanoplus sanguinipes"),
-   #     selectInput('sites.sel', 'Select sites to plot', choices= as.character(elevs), multiple=TRUE, selected=elevs)
-   #   ),
-   # 
-   # ),
     fluidRow(
-       column(4,radioButtons('facet', 'Select variable for columns', c("Species", "Year"), inline = TRUE)),
-       column(4,selectInput('species.sel', 'Select species to plot', choices= as.character(specs), multiple=TRUE, selected="Melanoplus sanguinipes")),
-      #column(4,sliderInput('year', 'Range of years to plot',
-      #                        min=min(dataset$year),
-      #                        max=max(dataset$year),
-      #                        value=c(min(dataset$year),
-      #                        max(dataset$year)),
-      #                        format = "####",sep = "",step = 1))
+       column(4, radioButtons('facet', 'Select variable for columns', c("Species", "Year"), inline = TRUE)),
+       column(4, selectInput('species.sel', 'Select species to plot', choices= as.character(specs), multiple = TRUE, selected = "Melanoplus sanguinipes")),
        column(4, pickerInput('period', 'Select years to plot',
                              choices = list(Initial = as.character(initials), Resurvey = as.character(resurveys)),
                              options = list(`actions-box` = TRUE),
                              multiple = TRUE,
                              selected = initials))
-      #column(4,selectInput('y', 'Y',  c('Developmental Index'='DI'))),
-      #column(4,selectInput('color', 'Color', c('Mean Season GDDs'='Cdd_siteave')))
     ),
   
     #pick species and sites
     fluidRow(
-     column(4,radioButtons('x', 'Predictor variable (X)', c('Day of Year'='ordinal','Cumulative GDDs'='cdd_sum'), inline = TRUE)),
+     column(4,radioButtons('x', 'Predictor variable (X)', c('Day of Year','Cumulative GDDs'), inline = TRUE)),
      column(4,selectInput('sites.sel', 'Select sites to plot', choices= as.character(elevs), multiple=TRUE, selected=elevs))
     ),
    
     # Show a plot of the generated distribution
 
-    plotOutput(outputId="trendPlot", width="800px",height="600px"),
+    plotlyOutput(outputId="trendPlot"),
     hr(),
     
     includeMarkdown("include2.md"),
