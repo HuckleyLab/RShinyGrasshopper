@@ -1,3 +1,4 @@
+source("cicerone.R", local = T)
 
 # Read data from Github
 #absM.all=read.csv(text=GET("https://github.com/HuckleyLab/RShinyGrasshopper/gh-all.csv"))
@@ -8,23 +9,34 @@ absM.all = read.csv("gh-all.csv")
 absM.all.ssy = read.csv("gh-all.ssy.csv")
 
 # Changing to bad colnames just so that it shows the right tooltops when running ggplotly. Couldn't figure out a way to change names for tooltip.
-colnames(absM.all)[24] <- "Mean season GDDs"
-colnames(absM.all)[16] <- "Cumulative GDDs"
-colnames(absM.all)[1] <- "Day of year"
-colnames(absM.all)[18] <- "Development index"
+colnames(absM.all)[c(1, 10, 16, 18, 24)] <- c("Day of year", "Year", "Cumulative GDDs", "Development index", "Mean season GDDs")
+
 absM.all$`Mean season GDDs` <- round(absM.all$`Mean season GDDs`, digits = 2)
 absM.all$`Development index` <- round(absM.all$`Development index`, digits = 2)
 
 
-elevs= c("3048m", "2591m", "2195m", "1752m")
+elevs = c("3048m", "2591m", "2195m", "1752m")
 rgb.palette <- colorRampPalette(c("red", "orange", "blue"), space = "rgb")
 
 
 # Define server logic to do filtering
 shinyServer(function(input, output) {
   
+  observeEvent(input$tour1, guide1$init()$start())
+  
+  observeEvent(input$reset1, {
+    reset("viz-wrapper")
+  })
+  
+  observeEvent(input$tour2, guide2$init()$start())
+  
+  observeEvent(input$reset2, {
+    reset("species.sel2")
+    reset("sites.sel2")
+  })
+  
   dataset <- reactive({
-    absM.all %>% filter(year %in% input$period & species %in% input$species.sel & elev.lab %in% input$sites.sel)
+    absM.all %>% filter(Year %in% input$period & species %in% input$species.sel & elev.lab %in% input$sites.sel)
   })
   
   dataset2 <- reactive({
@@ -34,34 +46,53 @@ shinyServer(function(input, output) {
   
   output$trendPlot <- renderPlotly({
     
+    validate(
+      need(input$species.sel, "Select species"),
+      need(input$sites.sel, "Select sites"),
+      need(input$period, "Select years")
+    )
+    
     xlab.title = ifelse(input$x == "Cumulative GDDs", "Cumulative growing degree days (GDDs)", "Day of year")
     
     xvar = ifelse(input$x == "Cumulative GDDs", "`Cumulative GDDs`", "`Day of year`")
 
-    p <- ggplot(data = dataset(), aes_string(x = xvar, y = "`Development index`", color = "`Mean season GDDs`", group = 'year')) + 
-      geom_point(size = 0.7) + geom_line(aes(linetype = period, alpha=0.5)) +
-      scale_colour_gradientn(colours = rev(rgb.palette(10))) + 
-      labs(x = xlab.title, y = "Development Index", linetype = "") +
-      theme(legend.position = "bottom") + 
-      guides(alpha = FALSE)
+    colors <- c("Aeropedellus clavatus" = '#b35806', 
+                "Melanoplus boulderensis" = '#f1a340', 
+                "Chloealtis abdominalis" = '#fee0b6', 
+                "Camnula pellucida" = '#d8daeb', 
+                "Melanoplus dawsoni" = '#998ec3', 
+                "Melanoplus sanguinipes" = '#542788')
     
-    if(input$facet == "Species"){
-      p <- p + facet_grid(factor(elev.lab, levels = elevs) ~ species)
+    
+    if (input$facet == "Species") {
+      p <- ggplot(data = dataset(), aes_string(x = xvar, y = "`Development index`", group = "Year", color = "`Mean season GDDs`")) + 
+        geom_line(aes_string(linetype = "period")) + 
+        facet_grid(factor(elev.lab, levels = elevs) ~ species) +
+        scale_colour_gradientn(colours = rev(rgb.palette(10)))
     } else {
-      p <- p + facet_grid(factor(elev.lab, levels = elevs) ~ year)
+      p <- ggplot(data = dataset(), aes_string(x = xvar, y = "`Development index`", color = "species")) + 
+        geom_line() + 
+        facet_grid(factor(elev.lab, levels = elevs) ~ Year) +
+        scale_color_manual(values = colors, guide = F)
     }
+    p <- p + geom_point() + theme_bw() +
+      labs(x = xlab.title, y = "Development Index", linetype = "")
     
-    ggplotly(p, tooltip = c("Mean season GDDs", "year", "Cumulative GDDs", "Development index", "Day of year")) %>%
-      layout(legend = list(orientation = "h", x = -0.1, y = -0.1))
+    ggplotly(p, tooltip = c("Mean season GDDs", "Year", "Cumulative GDDs", "Development index", "Day of year")) %>%
+      layout(legend = list(orientation = "h", x = -0.05, y = -0.1))
   })
   
   #set up plot height for secondPlot
-  height_all <- function(){
-    if(identical(elevs, input$sites.sel2)) return (800)
+  height_all <- function() {
+    if (identical(elevs, input$sites.sel2)) return (800)
       else return (500)
   }
 
   output$secondPlot <- renderPlot({
+    validate(
+      need(input$species.sel2, "Select species"),
+      need(input$sites.sel2, "Select sites")
+    )
     colors <- c("Aeropedellus clavatus" = '#b35806', 
                 "Melanoplus boulderensis" = '#f1a340', 
                 "Chloealtis abdominalis" = '#fee0b6', 
