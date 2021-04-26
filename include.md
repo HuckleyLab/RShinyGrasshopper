@@ -10,7 +10,7 @@ output: html**document
 #### [Link to TrEnCh-Ed](https://trench-ed.github.io/#)
 
 <p>
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Grasshoppermetasnodgrass.jpg"/, height="450 px", align="right">
+<img src="Grasshoppers.png"/, height="450 px", align="right">
 </p>
 
 *Image sources:*  
