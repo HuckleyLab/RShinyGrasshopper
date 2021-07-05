@@ -4,24 +4,13 @@ author: “Meera Lee Sethi"
 date: "4/8/2019"
 output: html**document
 ---
-
-## Phenological Responses to Climate Change: A Grasshopper Case Study
-
-#### [Link to TrEnCh-Ed](https://trench-ed.github.io/#)
+[Link to TrEnCh-Ed](https://trench-ed.trenchproject.com)
 
 <p>
 <img src="Grasshoppers.png"/, height="450 px", align="right">
 </p>
 
-*Image sources:*  
-*1. Grasshopper developmental stages, image: Wikimedia*  
-*2. Field site in Boulder, CO, 1960, photo: Don Van Horn*  
-*3. John Hilliard & Marion Isely (Gordon Alexander's wife, also a trained biologist) at Guanella Pass, 1959, photo: Don Van Horn*  
-*4. John Hilliard & Gordon Alexander, 1958, photo: Don Van Horn*  
-*5. César gets ready to sweep for grasshoppers, image: César Nufio*  
-*6. Melanoplus sanguinipes, image: Don Van Horn*  
-*7. Chloealtis addominalis, image: Don Van Horn*  
-*8. Aeropedellus clavatus, image: Don Van Horn*  
+*Image credits:  1. Grasshopper developmental stages, image: Wikimedia;  2. Field site in Boulder, CO, 1960, photo: Don Van Horn;  3. John Hilliard & Marion Isely (Gordon Alexander's wife, also a trained biologist) at Guanella Pass, 1959, photo: Don Van Horn; 4. John Hilliard & Gordon Alexander, 1958, photo: Don Van Horn; 5. César gets ready to sweep for grasshoppers, image: César Nufio; 6. Melanoplus sanguinipes, image: Don Van Horn; 7. Chloealtis addominalis, image: Don Van Horn; 8. Aeropedellus clavatus, image: Don Van Horn*  
 
 ### Temperature and Phenology
 
@@ -45,6 +34,8 @@ Every week in the summers of 1958-1960, entomologists Gordon Alexander and John 
 </p>
 
 Nearly fifty years later, a scientist named César Nufio realized that by conducting a resurvey of the same sites using the same protocols, he could assess how these grasshoppers had responded both to year-to-year variation in temperature at these locations, and to the larger trend of climate warming. A team led by Nufio did this work during 2006-2016. You can read more about Nufio's journey to science [here](https://trench-ed.github.io/#cesar)!  
+
+#### Learn more about the research project and see more historical photos  [here](https://www.trenchproject.com/grasshopper)
 
 The phenology of a given grasshopper species or population may be more or less sensitive to summer temperatures depending on whether it tends to emerge from diapause early or late in the season, how far it is able to disperse, and where on the mountain it lives. This is because seasonality affects the amount of time available for development, and species that have a lower ability to disperse (e.g. wingless species) may be more **locally adapted**, or more genetically well-suited to the specific environmental conditions where it is found. Finally, at higher elevations, summers are both shorter and cooler than at lower elevations, placing even greater constraints on insect development. The table below shows the traits of six grasshopper species that were surveyed by both the historic and the contemporary researchers.
 

@@ -21,6 +21,11 @@ shinyUI <- fluidPage(
   use_cicerone(),
   useShinyjs(),
   title = "Grasshoppers",
+  setBackgroundColor(color = "#C7DAE0"),
+  titlePanel(
+    div(tags$img(src="TrenchEdLogo.png", height = 150), 
+        "How Grasshopper Development shifts with Climate Change")
+  ),
   includeMarkdown("include.md"),
   actionBttn(
     inputId = "reset1",
