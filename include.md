@@ -20,12 +20,14 @@ Temperature is an especially influential factor in the lives of **ectotherms**, 
 
 
 ### Colorado Grasshoppers: Then and Now
-
+<!--
 <p>
 <img src="http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/3005-2-mis-Bureau-stdsCLEAN.jpg"/, height="200 px">
 <img src="http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/2676-J-Hilliard-Mrs-A.jpg"/, height="200 px">
 <img src="http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/2056-Hilliard-and-Alexander-1958.jpg"/, height="200 px">
 </p>
+
+-->
 	
 Every week in the summers of 1958-1960, entomologists Gordon Alexander and John Hilliard led a field crew that collected grasshoppers along an **elevational transect**—a series of survey sites located at different elevations—in the Rocky Mountains of Colorado. Because each grasshopper instar is recognizably different, as you can see in the figure above, the pair were able to accurately identify the developmental age of each individual they collected. 
 
@@ -49,13 +51,14 @@ The phenology of a given grasshopper species or population may be more or less s
 | Melanoplus boulderensis&nbsp;&nbsp; 	| Early       	| Limited         	| 2195-3048m      	|
 | Melanoplus dawsoni      	| Late        	| Limited         	| 1752-2591m      	|
 | Melanoplus sanguinipes  	| Late        	| More dispersive 	| 1752-3048m      	|                              
-   
+<!--   
 <p align = "center">
 <br><br>
 <img src="http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/1995-Melanoplus-mexicanus-sanguinipes.jpg"/, height="200 px">
 <img src="http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/2054-Chloealtis-addominalis.jpg"/, height="200 px">
 <br><br>
 </p>
+-->
                  
 ### How to use this visualization
 

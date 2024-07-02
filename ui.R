@@ -18,10 +18,13 @@ resurveys = c("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2
 
 # Define UI 
 shinyUI <- fluidPage(
+  tags$head(
+    tags$link(rel = "icon", type = "image/x-icon", href = "favicon.ico")
+  ),
   use_cicerone(),
   useShinyjs(),
   title = "Grasshoppers",
-  setBackgroundColor(color = "#C7DAE0"),
+  setBackgroundColor(color = "white"),
   titlePanel(
     div(tags$img(src="TrenchEdLogo.png", height = 150), 
         "How Grasshopper Development shifts with Climate Change")
